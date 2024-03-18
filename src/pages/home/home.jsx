@@ -71,7 +71,7 @@ export const Home = () => {
               <p>AUTODIDACTA</p>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Facilis, sit?
+                Facilis, sit??
               </p>
             </SoftSkillCard>
           </SoftSkillsContainer>
@@ -93,7 +93,7 @@ export const Home = () => {
               alt="Javascript Icon"
             />
             <motion.img
-              whileHover={{ scale: 1.04 }}
+              whileHover={{ scale: 1.05 }}
               src={bootstrap}
               alt="Bootstrap Icon"
             />
