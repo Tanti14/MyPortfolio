@@ -54,7 +54,7 @@ export const Navbar = () => {
             to="https://www.instagram.com/santicostanti_/?hl=es-la"
             target="_blank"
           >
-            <Image src={instaicon} />
+            <Image src={instaicon} alt=" Instagram Icon" />
           </Link>
         </motion.button>
         <motion.button whileHover={{ scale: 1.04 }}>
@@ -62,12 +62,12 @@ export const Navbar = () => {
             to="https://www.linkedin.com/in/santiagocostanti"
             target="_blank"
           >
-            <Image src={linkedicon} />
+            <Image src={linkedicon} alt="LinkedIn Icon" />
           </Link>
         </motion.button>
         <motion.button whileHover={{ scale: 1.04 }}>
           <Link to="https://github.com/Tanti14" target="_blank">
-            <Image src={github} />
+            <Image src={github} alt="GitHub Icon" />
           </Link>
         </motion.button>
       </RedesContainer>
