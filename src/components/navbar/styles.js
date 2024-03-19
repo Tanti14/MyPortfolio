@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
@@ -14,15 +13,9 @@ export const Nav = styled.nav`
 
 export const NavImgContainer = styled(NavLink)`
   width: 100%;
-  img{
+  img {
     width: 80px;
-  }
-`;
-
-export const Image = styled.img`
-  width: 40px;
-  &&:hover {
-    filter: drop-shadow(0 0 0.75rem black);
+    height: 100%;
   }
 `;
 
@@ -31,4 +24,12 @@ export const RedesContainer = styled.div`
   justify-content: end;
   align-items: center;
   width: 100%;
+`;
+
+export const Image = styled.img`
+  width: 40px;
+  height: 100%;
+  &:hover {
+    filter: drop-shadow(0 0 0.75rem black);
+  }
 `;
