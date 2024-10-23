@@ -1,5 +1,5 @@
 import React from "react";
-import scpicture from "../../assets/img/hero/scpicture.png";
+import scpicture from "../../assets/img/hero/scpicture.webp";
 import html from "../../assets/img/technologies/html.svg";
 import css from "../../assets/img/technologies/css.svg";
 import js from "../../assets/img/technologies/js.svg";
@@ -8,6 +8,8 @@ import tailwind from "../../assets/img/technologies/tailwind.svg";
 import proactivo from "../../assets/img/softskills/proactivo.png";
 import teamwork from "../../assets/img/softskills/teamwork.png";
 import autodidact from "../../assets/img/softskills/autodidacta.png";
+import poke from "../../assets/img/destacado/pokeapidex.webp";
+import { ButtonComponent } from "../../components/ui/button/button.jsx";
 import { motion } from "framer-motion";
 import {
   HeroSection,
@@ -19,7 +21,11 @@ import {
   HeroFoot,
   SoftSkillsContainer,
   SoftSkillCard,
+  ProjectsSection,
+  ProjectsContainer,
+  ProjectsSecionInfo,
 } from "./styles.js";
+import "./styles.css";
 import TypewriterComponent from "typewriter-effect";
 
 export const Home = () => {
@@ -77,6 +83,44 @@ export const Home = () => {
           </SoftSkillsContainer>
         </HeroFoot>
       </HeroSection>
+
+      <ProjectsSection>
+        <ProjectsSecionInfo>
+          <h2>PROYECTOS DESTACADOS</h2>
+          <p>
+            Echa un vistazo a algunos de mis proyectos realizados durante mi
+            aprendizaje.
+          </p>
+        </ProjectsSecionInfo>
+        <ProjectsContainer>
+          <div className="card">
+            <img src={poke} alt="nashe" />
+            <div className="card__content">
+              <h3 className="card__title">Pokeapidex</h3>
+              <p className="card__description">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src={poke} alt="nashe" />
+            <div className="card__content">
+              <h3 className="card__title">Pokeapidex</h3>
+              <p className="card__description">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+
+          <div className="card">
+            <img src={poke} alt="nashe" />
+            <div className="card__content">
+              <h3 className="card__title">Pokeapidex</h3>
+              <p className="card__description">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
+        </ProjectsContainer>
+        <div className="buttons">
+          <ButtonComponent to="https://github.com/Tanti14" txt="Ver más" />
+        </div>
+      </ProjectsSection>
 
       <section className="Tecnologias">
         <TechContainer>
